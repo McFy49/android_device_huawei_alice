@@ -32,6 +32,8 @@ on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug mode=0755
 
 on init
+    export LD_PRELOAD "/system/vendor/lib/rild_symbol.so"
+
     mkdir /cust
     mkdir /3rdmodem
     mkdir /3rdmodemnvm

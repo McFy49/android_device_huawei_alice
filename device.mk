@@ -232,7 +232,8 @@ PRODUCT_PACKAGES += \
     libshim_camera \
     libshim_icu \
     libshim_log \
-    libshim_gui
+    libshim_gui \
+    rild_symbol
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.magic.api.version=0.1 \
